@@ -23,6 +23,15 @@ def validate_choice(data):
         return False
     return True
 
+def generate_word(number):
+    if number == 1:
+        return random.choice(american_countries.american_countries).upper()
+    elif number == 2:
+        return random.choice(asian_countries.asian_countries).upper()
+    elif number == 3:
+        return random.choice(european_countries.european_countries).upper()
+
+
 def main():
     print(word_art.start_page)
     print("You can choose from 3 different topics in this game:")
@@ -55,6 +64,9 @@ def main():
         "2": equipment,
         "3": abbrevations
     }
+    
+    word_game = random.choice(choice_words[topic_input]).upper()
+    print(word_game)
 
 main()
 
