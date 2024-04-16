@@ -23,13 +23,20 @@ def validate_choice(data):
         return False
     return True
 
-def generate_word(number):
-    if number == 1:
-        return random.choice(american_countries.american_countries).upper()
-    elif number == 2:
-        return random.choice(asian_countries.asian_countries).upper()
-    elif number == 3:
-        return random.choice(european_countries.european_countries).upper()
+def get_letter():
+    while True:
+        try:
+            letter = input('Please enter a letter: \n').upper()
+            if len(letter) == 1 and letter.isalpha():
+                break
+            else:
+                print("Please only wright one letter at a time and no numbers\n")
+        except ValueError:
+            print("Please enter a letter\n")
+            
+        
+
+    return letter 
 
 
 def main():
@@ -40,24 +47,24 @@ def main():
     print("You have to know your CrossFit in order to save the poor bird!")
     print("You have 6 attempts before the bird gets eaten...")
     print("Only letters allowed and only one letter per guess")
-    print("Good luck!")
+    print("Good luck!\n")
 
     """
     Checks the validate_choice function and if True the while loop breaks.
     If False player get to input a choice again.
     """
     while True:
-        print("Choose your topic. A number between 1-3:\n")
+        print("Choose your topic. A number between 1-3:")
         print("1. Movements")
         print("2. Equipment")
-        print("3. Abbrevations")
+        print("3. Abbrevations\n")
         topic_input = input("Choose topic: ")
         if validate_choice(topic_input):
             break
 
     """
-    Picks a list with random words choosed by
-    player depending on the topic chosen.
+    Picks a list with random words chosen by the
+    player depending on the topic. Then a random word is generated.
     """
     choice_words = {
         "1": movements,
@@ -66,7 +73,8 @@ def main():
     }
     
     word_game = random.choice(choice_words[topic_input]).upper()
-    print(word_game)
+    
+    get_letter()
 
 main()
 
