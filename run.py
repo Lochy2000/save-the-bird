@@ -92,8 +92,8 @@ def check_letter(word_game):
                 print(word_art.win)
         else:
             print("No, that's not correct...")
-            print(f"You have tried these letters: {right + wrong}\n")
             wrong += letter
+            print(f"You have tried these letters: {right + wrong}\n")
             wrong_count -= 1
             print(cat_bird.stages[wrong_count])
             if wrong_count == 0:
