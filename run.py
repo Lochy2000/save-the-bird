@@ -6,24 +6,23 @@ import word_art
 import os
 
 
-
-
-def validate_choice(data):
+def validate_choice():
     """
-    Validates the choice of topic input.
+    Asks the player to input a topic choice.
+    If True the while loop breaks.
+    If False player get to input a choice again.
     """
-    try:
-        if data.isalpha():
-            raise ValueError(
-                f"You need to enter a number. You entered: {data}")
-        if int(data) < 1:
-            raise ValueError(f"You need to enter a number between 1 and 3. You entered: {data}")
-        if int(data) > 3:
-            raise ValueError(f"You need to enter a number between 1 and 3. You entered: {data}")
-    except ValueError as e:
-        print(f"Invalid input: {e}. Please try again.\n")
-        return False
-    return True
+    while True:
+        try:
+            topic_input = int(input("Choose topic: "))
+            if 1 <= topic_input <=3:
+                break
+            else:
+                print("That is not a valid number, please try again!\n")
+        except ValueError:
+            print("You need to enter a number between 1 and 3.\n")
+    return topic_input
+
 
 def get_letter():
     """
@@ -86,25 +85,16 @@ def main():
     print("You have 6 attempts before the bird gets eaten...")
     print("Only letters allowed and only one letter per guess")
     print("Good luck!\n")
-
-    """
-    Asks the player to input a topic choice.
-    Checks the validate_choice function and if True the while loop breaks.
-    If False player get to input a choice again.
-    """
-    while True:
-        print("Choose your topic. A number between 1-3:")
-        print("1. Movements")
-        print("2. Equipment")
-        print("3. Abbrevations\n")
-        topic_input = input("Choose topic: ")
-        if validate_choice(topic_input):
-            break
+    print("Choose your topic. A number between 1-3:")
+    print("1. Movements")
+    print("2. Equipment")
+    print("3. Abbrevations\n")
     
+    option_number = validate_choice()
     """
     Picks a list with random words chosen by the
     player depending on the topic. Then a random word is generated.
-    """
+    
     choice_words = {
         "1": movements,
         "2": equipment,
@@ -116,6 +106,7 @@ def main():
         print("_", end=" ")
     
     letter = get_letter()
+    """
 
        
 
