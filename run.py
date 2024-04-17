@@ -51,12 +51,11 @@ def get_letter():
             else:
                 print("Please only wright one letter at a time and no numbers\n")
         except ValueError:
-            print("Please enter a letter\n")
-            
-        return letter 
+            print("Please enter a letter\n")          
+    return letter 
 
 """
-def check_letter(input_letter):
+def check_letter(word_game):
     
     Checks if the input letter is in the word 
     and adds it to either the correct or wrong count
@@ -106,10 +105,11 @@ def main():
     
     option_number = validate_choice()
     word_game = get_word(option_number)
-    print(word_game)
+    get_letter()
+ 
 
     
-   """
+    """
         
     word_game = random.choice(choice_words[topic_input]).upper()
     for x in word_game:
