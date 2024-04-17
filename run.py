@@ -68,28 +68,36 @@ def check_letter(word_game):
 
     while right_count != len(word_game.replace(' ', '')) and wrong_count != 0:
         display = ''
-    for letter in word_game:
-        if letter in right:
-            display += f'{letter}'
-        else:
+        for letter in word_game:
+            if letter in right:
+                display += f'{letter}'
+            else:
                 display += '_ '
         print(display)
 
         letter = get_letter()
 
         if letter in right or letter in wrong:
-            print(f"You have already tried {letter}, please try again!)
+            print(f"You have already tried {letter}, please try again!")
             continue
 
         if letter in word_game:
             print("That's correct!")
             right += letter
             print(f"You have tried these letters: {right + wrong}\n")
-        right_count += word_game.count(letter)
+            right_count += word_game.count(letter)
 
             if right_count == len(word_game.replace(" ", "")):
-                print(f"That's right, the word is {word_game}\n")
+                print(f"That's right, the word is {word_game}!\n")
                 print(word_art.win)
+        else:
+            print("No, that's not correct...")
+            print(f"You have tried these letters: {right + wrong}\n")
+            wrong += letter
+            wrong_count -= 1
+            print(cat_bird.stages[wrong_count])
+            if wrong_count == 0:
+                print(word_art.lose)
 
 
 def main():
@@ -111,6 +119,8 @@ def main():
     
     option_number = validate_choice()
     word_game = get_word(option_number)
+    #print(word_game)
+    check_letter(word_game)
     
  
 
