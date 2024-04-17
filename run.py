@@ -14,7 +14,7 @@ def validate_choice():
     """
     while True:
         try:
-            topic_input = int(input("Choose topic: "))
+            topic_input = int(input("Choose topic:\n"))
             if 1 <= topic_input <=3:
                 break
             else:
@@ -42,7 +42,7 @@ def get_letter():
     """
     while True:
         try:
-            letter = input("\n\nPlease enter a letter: ").upper()
+            letter = input("\nPlease enter a letter:\n").upper()
             if len(letter) == 1 and letter.isalpha():
                 break
             else:
@@ -54,7 +54,7 @@ def get_letter():
 def restart_game():
     while True:
         try:
-            restart = input("Want to play again? Y or N: ").upper()
+            restart = input("Want to play again? Y or N:\n").upper()
             if restart == "Y":
                 main()
                 break
@@ -134,7 +134,6 @@ def main():
     
     option_number = validate_choice()
     word_game = get_word(option_number)
-    #print(word_game)
     check_letter(word_game)
      
 main()
