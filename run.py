@@ -51,6 +51,19 @@ def get_letter():
             print("Please enter a letter\n")          
     return letter 
 
+def restart_game():
+    while True:
+        try:
+            restart = input("Want to play again? Y or N: ").upper()
+            if restart == "Y":
+                main()
+                break
+            elif restart == "N":
+                print("Thanks for playing!")
+                break
+        except ValueError:
+            print("Please enter Y or N")     
+
 
 def check_letter(word_game):
     """
@@ -90,6 +103,7 @@ def check_letter(word_game):
             if right_count == len(word_game.replace(" ", "")):
                 print(f"That's right, the word is {word_game}!\n")
                 print(word_art.win)
+                restart_game()
         else:
             print("No, that's not correct...")
             wrong += letter
@@ -98,6 +112,7 @@ def check_letter(word_game):
             print(cat_bird.stages[wrong_count])
             if wrong_count == 0:
                 print(word_art.lose)
+                restart_game()
 
 
 def main():
