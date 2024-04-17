@@ -34,9 +34,6 @@ def get_word(option_number):
         return random.choice(equipment).upper()
     elif option_number == 3:
         return random.choice(abbrevations).upper()
-    
-        
-
 
 def get_letter():
     """
@@ -58,7 +55,10 @@ def get_letter():
 def check_letter(word_game):
     """
     Checks if the input letter is in the word 
-    and adds it to either the correct or wrong count
+    and adds it to either the right or wrong count
+    Displays the letter in the word if guess is correct
+    Keeps track of number of wrong counts
+    When wrong_counts reaches 7 the game is over.
     """
     
     right_count = 0
@@ -121,22 +121,7 @@ def main():
     word_game = get_word(option_number)
     #print(word_game)
     check_letter(word_game)
-    
- 
-
-    
-    """
-        
-    word_game = random.choice(choice_words[topic_input]).upper()
-    for x in word_game:
-        print("_", end=" ")
-    
-    letter = get_letter()
-    """
-
-       
-
-
+     
 main()
 
 
