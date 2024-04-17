@@ -23,6 +23,20 @@ def validate_choice():
             print("You need to enter a number between 1 and 3.\n")
     return topic_input
 
+def get_word(number):
+    """
+    Picks a list with random words chosen by the
+    player depending on the topic. Then a random word is generated.
+    """
+    if number == 1:
+        return random.choice(movements).upper()
+    elif number == 2:
+        return random.choice(equipment).upper()
+    elif number == 3:
+        return random.choice(abbrevations).upper()
+
+        
+
 
 def get_letter():
     """
@@ -91,15 +105,11 @@ def main():
     print("3. Abbrevations\n")
     
     option_number = validate_choice()
-    """
-    Picks a list with random words chosen by the
-    player depending on the topic. Then a random word is generated.
+    word_game = get_word(option_number)
+    print(word_game)
+
     
-    choice_words = {
-        "1": movements,
-        "2": equipment,
-        "3": abbrevations
-    }
+   """
         
     word_game = random.choice(choice_words[topic_input]).upper()
     for x in word_game:
