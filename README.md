@@ -22,6 +22,7 @@ If the player is correct, the Bird escapes the Cat and survives. If the player's
 
 ## Bugs
 -   clear_terminal() function did not clear the terminal as expected when Y was chosen by the player on the Question to restart the game.
+-   In the mock terminal there is an empty line in the cat_bird animations that I don't see in the code or in the Gitpod terminal.
 
 ### Unfixed bugs
 
