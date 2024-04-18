@@ -16,7 +16,8 @@ def validate_choice():
         try:
             topic_input = int(input("Choose topic:\n"))
             if 1 <= topic_input <=3:
-                break
+                print(cat_bird.stages[6])
+                break                
             else:
                 print("That is not a valid number, please try again!\n")
         except ValueError:
