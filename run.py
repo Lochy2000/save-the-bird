@@ -66,6 +66,7 @@ def restart_game():
         try:
             restart = input("Want to play again? Y or N:\n").upper()
             if restart == "Y":
+                clear_terminal()
                 main()
                 break
             elif restart == "N":
