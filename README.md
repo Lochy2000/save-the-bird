@@ -16,15 +16,27 @@ If the player is correct, the Bird escapes the Cat and survives. If the player's
 -   A Highscore board
 
 ## Flowchart
-[Image of the flowchart of the game](/documentation/project_description/flowchart.png)
+![Image of the flowchart of the game](/documentation/project_description/flowchart.png)
 
 ## Testing
 
 ## Bugs
+-   clear_terminal() function did not clear the terminal as expected when Y was chosen by the player on the Question to restart the game.
 
 ### Unfixed bugs
 
 ## Deployment
+-   The app was deployed with Heroku following these steps:
+    -   After creating a Heroku account, click "New" to create a new app from the dashboard.
+    -   Create a name of the app, that needs to be unique, and select your region. Press "Create app"
+    -   Go to settings and add the necessary Config_vars and buildpacks. Make sure that the buildpacks are set to "Python" and "NodeJS", in that order.
+    -   Go to Deploy tab and scroll down to Deployment Method.
+    -   Select GitHub and search for your GitHub repository.
+    -   Scroll down to deploy options.
+    -   For this project the Manual Deploy method was chosen.
+    -   Chose main branch and click Deploy Branch. This will deploy the current state of the branch specified.
+    -   Now the app is being built and when Deploy to Heroku has a green check mark, the build is finished.
+    -   Click View button to open the app in a browser window.
 
 ## Credits
 
