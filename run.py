@@ -124,8 +124,8 @@ def check_letter(word_game):
             print(cat_bird.stages[wrong_count])
             if wrong_count == 0:
                 clear_terminal()
-                print(f"NOOOOOOOOO...... The word was: {word_game}!\n")
                 print(cat_bird.stages[0])
+                print(f"NOOOOOOOOO...... The word was: {word_game}!\n")
                 print(word_art.lose)
                 restart_game()
 
