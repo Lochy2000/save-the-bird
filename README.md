@@ -1,32 +1,37 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+### Save the Bird!
 
-Welcome,
+[Picture of startpage]()
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+Save the Bird is a Python terminal game deployed to Heroku.
+The goal of the game is to test the players knowledge in the sport of CrossFit.
+The player gets to choose from 3 different topics related to CrossFit and then guess what the hidden word is.
+If the player is correct, the Bird escapes the Cat and survives. If the player's guess is wrong to many times, the Bird gets eaten by the Cat.
 
-## Reminders
+## User Experience (UX)
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+## Features
 
-## Creating the Heroku app
+# Future Features
+-   Ability to log in and save scores
+-   A Highscore board
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Flowchart
+[Image of the flowchart of the game]()
 
-1. `heroku/python`
-2. `heroku/nodejs`
+## Testing
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+## Bugs
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+# Unfixed bugs
 
-Connect your GitHub repository and deploy as normal.
+## Deployment
 
-## Constraints
+## Credits
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+# Content
 
----
+# Media
 
-Happy coding!
+
+
+
