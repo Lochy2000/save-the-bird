@@ -44,6 +44,7 @@ If the player is correct, the Bird escapes the Cat and survives. If the player's
 ### Content
 
 ### Media
+-   I got the information on how to install Colorama from [pypi.org](https://pypi.org/project/colorama/)
 
 
 
