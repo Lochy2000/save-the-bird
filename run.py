@@ -64,7 +64,7 @@ def get_letter():
 def restart_game():
     while True:
         try:
-            restart = input("Want to play again? Y or N:\n").upper()
+            restart = input(" Want to play again? Y or N:\n").upper()
             if restart == "Y":
                 clear_terminal()
                 main()
@@ -82,7 +82,7 @@ def check_letter(word_game):
     and adds it to either the right or wrong count
     Displays the letter in the word if guess is correct
     Keeps track of number of wrong counts
-    When wrong_counts reaches 7 the game is over.
+    When wrong_counts reaches 6 the game is over.
     """
     
     right_count = 0
@@ -113,7 +113,7 @@ def check_letter(word_game):
 
             if right_count == len(word_game.replace(" ", "")):
                 clear_terminal()
-                print(f"That's right, the word is {word_game}!\n")
+                print(f" That's right, the word is {word_game}!\n")
                 print(word_art.win)
                 restart_game()
         else:
@@ -125,7 +125,7 @@ def check_letter(word_game):
             if wrong_count == 0:
                 clear_terminal()
                 print(cat_bird.stages[0])
-                print(f"NOOOOOOOOO...... The word was: {word_game}!\n")
+                print(f" NOOOOOOOOO...... The word was: {word_game}!\n")
                 print(word_art.lose)
                 restart_game()
 
