@@ -6,6 +6,14 @@ import word_art
 import os
 
 
+def clear_terminal():
+    """
+    Clears the screen from previous text
+    From https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python
+    """
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
 def validate_choice():
     """
     Asks the player to input a topic choice.
@@ -16,6 +24,7 @@ def validate_choice():
         try:
             topic_input = int(input("Choose topic:\n"))
             if 1 <= topic_input <=3:
+                clear_terminal()            
                 print(cat_bird.stages[6])
                 break                
             else:
