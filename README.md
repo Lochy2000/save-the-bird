@@ -1,4 +1,4 @@
-### Save the Bird!
+# Save the Bird!
 
 [Picture of startpage]()
 
@@ -11,26 +11,26 @@ If the player is correct, the Bird escapes the Cat and survives. If the player's
 
 ## Features
 
-# Future Features
+### Future Features
 -   Ability to log in and save scores
 -   A Highscore board
 
 ## Flowchart
-[Image of the flowchart of the game]()
+[Image of the flowchart of the game](/documentation/project_description/flowchart.png)
 
 ## Testing
 
 ## Bugs
 
-# Unfixed bugs
+### Unfixed bugs
 
 ## Deployment
 
 ## Credits
 
-# Content
+### Content
 
-# Media
+### Media
 
 
 
