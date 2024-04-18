@@ -111,6 +111,7 @@ def check_letter(word_game):
             right_count += word_game.count(letter)
 
             if right_count == len(word_game.replace(" ", "")):
+                clear_terminal()
                 print(f"That's right, the word is {word_game}!\n")
                 print(word_art.win)
                 restart_game()
@@ -121,6 +122,9 @@ def check_letter(word_game):
             wrong_count -= 1
             print(cat_bird.stages[wrong_count])
             if wrong_count == 0:
+                clear_terminal()
+                print(f"NOOOOOOOOO...... The word was: {word_game}!\n")
+                print(cat_bird.stages[0])
                 print(word_art.lose)
                 restart_game()
 
