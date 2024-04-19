@@ -124,6 +124,7 @@ def check_letter(word_game):
             print(cat_bird.stages[wrong_count])
             if wrong_count == 0:
                 clear_terminal()
+                print()
                 print(cat_bird.stages[0])
                 print(Style.BRIGHT + f" NOOOOOOOOO...... The word was: {word_game}!\n" + Style.RESET_ALL)
                 print(Fore.RED + Style.BRIGHT + word_art.lose + Style.RESET_ALL)
