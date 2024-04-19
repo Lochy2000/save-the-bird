@@ -114,7 +114,7 @@ def check_letter(word_game):
             if right_count == len(word_game.replace(" ", "")):
                 clear_terminal()
                 print(Style.BRIGHT + f" That's right, the word is {word_game}!\n" + Style.RESET_ALL)
-                print(Fore.GREEN + word_art.win + Style.RESET_ALL)
+                print(Fore.GREEN + Style.BRIGHT + word_art.win + Style.RESET_ALL)
                 restart_game()
         else:
             print("No, that's not correct...")
@@ -126,7 +126,7 @@ def check_letter(word_game):
                 clear_terminal()
                 print(cat_bird.stages[0])
                 print(Style.BRIGHT + f" NOOOOOOOOO...... The word was: {word_game}!\n" + Style.RESET_ALL)
-                print(Fore.RED + word_art.lose + Style.RESET_ALL)
+                print(Fore.RED + Style.BRIGHT + word_art.lose + Style.RESET_ALL)
                 restart_game()
 
 
@@ -134,14 +134,14 @@ def main():
     """
     Start page with name of the game and the game rules
     """
-    print(Fore.CYAN + word_art.start_page)
-    print(Style.BRIGHT + "You can choose from 3 different topics in this game:")
-    print(Style.BRIGHT + "Movements, Equipment and Abbrevations")
-    print(Style.BRIGHT + "They are all related to the lovely sport of CrossFit")
-    print(Style.BRIGHT + "You have to know your CrossFit in order to save the poor bird!")
-    print(Style.BRIGHT + "You have 6 attempts before the bird gets eaten...")
-    print(Style.BRIGHT + "Only letters allowed and only one letter per guess")
-    print(Style.BRIGHT + "Good luck!\n" + Style.RESET_ALL)
+    print(Fore.CYAN + Style.BRIGHT + word_art.start_page)
+    print("You can choose from 3 different topics in this game:")
+    print("Movements, Equipment and Abbrevations")
+    print("They are all related to the lovely sport of CrossFit")
+    print("You have to know your CrossFit in order to save the poor bird!")
+    print("You have 6 attempts before the bird gets eaten...")
+    print("Only letters allowed and only one letter per guess")
+    print("Good luck!\n" + Style.RESET_ALL)
     print("Choose your topic. A number between 1-3:")
     print("1. Movements")
     print("2. Equipment")
