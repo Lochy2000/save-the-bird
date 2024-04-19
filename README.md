@@ -16,7 +16,7 @@ If the player is correct, the Bird escapes the Cat and survives. If the player's
 -   A Highscore board
 
 ## Flowchart
-![Image of the flowchart of the game](/documentation/project_description/flowchart.png)
+![Image of the flowchart of the game](/documentation/flowchart.png)
 
 ## Testing
 
