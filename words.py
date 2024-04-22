@@ -4,7 +4,7 @@ movements = [
     "Pushup",
     "Pullup",
     "Clean",
-    "Snatch",   
+    "Snatch",
     "Handstand",
     "Boxjump",
     "Squat",
@@ -17,7 +17,6 @@ movements = [
     "Deadlift",
     "Situps"
 ]
-
 equipment = [
     "Kettlebell",
     "Dumbbell",
@@ -37,7 +36,6 @@ equipment = [
     "Rings",
     "Bar"
 ]
-
 abbrevations = [
     "HSPU",
     "SDHP",
@@ -47,13 +45,13 @@ abbrevations = [
     "WOD",
     "BBJO",
     "HSW",
-    "CTB",  
+    "CTB",
     "TTB",
     "KBS",
     "ATG",
     "RMU",
     "BMU",
-    "OHS",  
+    "OHS",
     "GPP",
     "TGU",
     "OTM"

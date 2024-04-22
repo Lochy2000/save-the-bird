@@ -1,3 +1,4 @@
+""" importing random providing a choice function, os and colorama """
 import random
 import cat_bird
 from words import movements, equipment, abbrevations
@@ -5,12 +6,14 @@ import word_art
 import os
 from colorama import Fore, Back, Style
 
+
 def clear_terminal():
     """
     Clears the screen from previous text, from:
     https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python
     """
     os.system('cls' if os.name == 'nt' else 'clear')
+
 
 def validate_choice():
     """
@@ -31,6 +34,7 @@ def validate_choice():
             print("You need to enter a number between 1 and 3.\n")
     return topic_input
 
+
 def get_word(option_number):
     """
     Picks a list with random words chosen by the
@@ -42,6 +46,7 @@ def get_word(option_number):
         return random.choice(equipment).upper()
     elif option_number == 3:
         return random.choice(abbrevations).upper()
+
 
 def get_letter():
     """
@@ -58,6 +63,7 @@ def get_letter():
         except ValueError:
             print("Please enter a letter\n")          
     return letter 
+
 
 def restart_game():
     """
@@ -76,6 +82,7 @@ def restart_game():
                 break
         except ValueError:
             print("Please enter Y or N")     
+
 
 def check_letter(word_game):
     """
@@ -114,7 +121,8 @@ def check_letter(word_game):
 
             if right_count == len(word_game):
                 clear_terminal()
-                print(Style.BRIGHT + f" That's right, the word is {word_game}!\n" + Style.RESET_ALL)
+                message = f" That's right, the word is {word_game}!\n"
+                print(Style.BRIGHT + f"{message}" + Style.RESET_ALL)
                 print(Fore.GREEN + Style.BRIGHT + word_art.win + Style.RESET_ALL)
                 restart_game()
         else:
@@ -127,9 +135,11 @@ def check_letter(word_game):
                 clear_terminal()
                 print()
                 print(cat_bird.stages[0])
-                print(Style.BRIGHT + f" NOOOOOOOOO...... The word was: {word_game}!\n" + Style.RESET_ALL)
+                message = f" NOOOOOOOOO...... The word was: {word_game}!\n"
+                print(Style.BRIGHT + f"{message}" + Style.RESET_ALL)
                 print(Fore.RED + Style.BRIGHT + word_art.lose + Style.RESET_ALL)
                 restart_game()
+
 
 def main():
     """
@@ -152,5 +162,5 @@ def main():
     word_game = get_word(option_number)
     check_letter(word_game)
      
-main()
 
+main()
