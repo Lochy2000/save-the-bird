@@ -91,7 +91,7 @@ def check_letter(word_game):
     right = ""
     wrong = ""
 
-    while right_count != len(word_game.replace(' ', '')) and wrong_count != 0:
+    while right_count != len(word_game) and wrong_count != 0:
         display = ''
         for letter in word_game:
             if letter in right:
@@ -112,7 +112,7 @@ def check_letter(word_game):
             print(f"You have tried these letters: {right + wrong}\n")
             right_count += word_game.count(letter)
 
-            if right_count == len(word_game.replace(" ", "")):
+            if right_count == len(word_game):
                 clear_terminal()
                 print(Style.BRIGHT + f" That's right, the word is {word_game}!\n" + Style.RESET_ALL)
                 print(Fore.GREEN + Style.BRIGHT + word_art.win + Style.RESET_ALL)

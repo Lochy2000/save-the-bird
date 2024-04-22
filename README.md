@@ -1,6 +1,6 @@
 # Save the Bird!
 
-[Picture of startpage]()
+![Picture of startpage](/documentation/startpage.png)
 
 Save the Bird is a Python terminal game deployed to Heroku.
 The goal of the game is to test the players knowledge in the sport of CrossFit.
@@ -8,11 +8,25 @@ The player gets to choose from 3 different topics related to CrossFit and then g
 If the player is correct, the Bird escapes the Cat and survives. If the player's guess is wrong to many times, the Bird gets eaten by the Cat.
 
 ## User Experience (UX)
+-   At the start page the user is asked to choose from three different topics by entering a number between 1 and 3.
+-   Once the choice is made, the game begins. A picture of a cat sneeking up to a bird is shown and the user is asked to guess a letter in the word.
+![Picture of first stage of the game]()
+-   If the guessed letter is wrong, the cat gets one step closer to the bird.
+![Picture of message when incorrect guess]()
+-   If the guessed letter is correct, the letter is added to the word.
+![Picture of message when correct guess]()
+-   There is a list of letters displayed to the user to know what letters they have guessed.
+![Picture of list of guessed letters]()
+-   If the user wrong guesses reaches 6, the game is lost and the bird gets eaten.
+![Picture of game lost]()
+-   If the user manages to guess the correct word, the game is won and the bird is saved!
+![Picture of game won](/documentation/win.png)   
+
 
 ## Features
 
 ### Future Features
--   Ability to log in and save scores
+-   Ability to save scores
 -   A Highscore board
 
 ## Flowchart
@@ -21,7 +35,7 @@ If the player is correct, the Bird escapes the Cat and survives. If the player's
 ## Testing
 
 ## Bugs
--   clear_terminal() function did not clear the terminal as expected when Y was chosen by the player on the Question to restart the game.
+
 -   In the mock terminal there is an empty line in the cat_bird animations that I don't see in the code or in the Gitpod terminal.
 
 ### Unfixed bugs
