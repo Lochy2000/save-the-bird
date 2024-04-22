@@ -25,9 +25,9 @@ def validate_choice():
         try:
             topic_input = int(input("Choose topic:\n"))
             if 1 <= topic_input <= 3:
-                clear_terminal()            
+                clear_terminal()
                 print(cat_bird.stages[6])
-                break                
+                break
             else:
                 print("That is not a valid number, please try again!\n")
         except ValueError:
@@ -61,8 +61,8 @@ def get_letter():
             else:
                 print("Only wright one letter at a time and no numbers\n")
         except ValueError:
-            print("Please enter a letter\n")          
-    return letter 
+            print("Please enter a letter\n")
+    return letter
 
 
 def restart_game():
@@ -81,12 +81,12 @@ def restart_game():
                 print("Thanks for playing!")
                 break
         except ValueError:
-            print("Please enter Y or N")     
+            print("Please enter Y or N")
 
 
 def check_letter(word_game):
     """
-    Checks if the input letter is in the word 
+    Checks if the input letter is in the word
     and adds it to either the right or wrong count
     Displays the letter in the word if guess is correct
     Keeps track of number of wrong counts, and for every guess that
@@ -123,7 +123,8 @@ def check_letter(word_game):
                 clear_terminal()
                 message = f" That's right, the word is {word_game}!\n"
                 print(Style.BRIGHT + f"{message}" + Style.RESET_ALL)
-                print(Fore.GREEN + Style.BRIGHT + word_art.win + Style.RESET_ALL)
+                print(Fore.GREEN + Style.BRIGHT + word_art.win
+                      + Style.RESET_ALL)
                 restart_game()
         else:
             print("No, that's not correct...")
@@ -137,7 +138,8 @@ def check_letter(word_game):
                 print(cat_bird.stages[0])
                 message = f" NOOOOOOOOO...... The word was: {word_game}!\n"
                 print(Style.BRIGHT + f"{message}" + Style.RESET_ALL)
-                print(Fore.RED + Style.BRIGHT + word_art.lose + Style.RESET_ALL)
+                print(Fore.RED + Style.BRIGHT + word_art.lose
+                      + Style.RESET_ALL)
                 restart_game()
 
 
@@ -157,10 +159,10 @@ def main():
     print("1. Movements")
     print("2. Equipment")
     print("3. Abbrevations\n")
-    
+
     option_number = validate_choice()
     word_game = get_word(option_number)
     check_letter(word_game)
-     
+
 
 main()
