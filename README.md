@@ -15,13 +15,13 @@ The deployed version of the app can be accessed [here](https://save-the-bird-604
 ![Picture of first stage of the game](/documentation/first_cat_bird.png)
 -   If the guessed letter is wrong, the cat gets one step closer to the bird.
 ![Picture of message when incorrect guess](/documentation/not_correct.png)
--   If the guessed letter is correct, the letter is added to the word.
+-   If the guessed letter is correct, the letter is added to the word. 
 ![Picture of message when correct guess](/documentation/correct_guess.png)
 -   There is also a list of letters displayed to the user to know what letters they have guessed, shown in pictures above.
 -   If the user wrong guesses reaches 6, the game is lost and the bird gets eaten.
 ![Picture of game lost](/documentation/lose.png)
 -   If the user manages to guess the correct word, the game is won and the bird is saved!
-![Picture of game won](/documentation/win.png)   
+![Picture of game won](/documentation/new_win.png)
 
 
 ## Features
@@ -51,6 +51,7 @@ During the development I tested the code in small portions using print statement
 ## Bugs
 
 -   In the mock terminal there was an empty line in the cat_bird animations that I didn't see in the code or in the Gitpod terminal.
+
     ![Picture of blank line in animation](/documentation/animation_bug.png)
     But after fixing the lenght of the lines and removing some white space according to the [pep8 tests](https://pep8ci.herokuapp.com/), I managed to get rid of that bug. 
 
@@ -80,7 +81,7 @@ During the development I tested the code in small portions using print statement
     -   os, for the clear tool to clear the terminal window.
     -   colorama, to color and style text.
 
--   Programming language was Pyhton
+-   Programming language was Python.
 
 -   Github was used to store the repository for submission.
 
@@ -91,6 +92,8 @@ During the development I tested the code in small portions using print statement
 - [Fancy Text Pro](https://www.fancytextpro.com/) was used to create the word art.
 
 - [Ascii Art](https://www.asciiart.eu/) is the source of the animations in the game.
+
+-   [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/) was used to run the code through to check it.
  
 
 
