@@ -7,18 +7,19 @@ The goal of the game is to test the players knowledge in the sport of CrossFit.
 The player gets to choose from 3 different topics related to CrossFit and then guess what the hidden word is.
 If the player is correct, the Bird escapes the Cat and survives. If the player's guess is wrong to many times, the Bird gets eaten by the Cat.
 
+The deployed version of the app can be accessed [here](https://save-the-bird-604fc56d90f3.herokuapp.com/)
+
 ## User Experience (UX)
 -   At the start page the user is asked to choose from three different topics by entering a number between 1 and 3.
 -   Once the choice is made, the game begins. A picture of a cat sneeking up to a bird is shown and the user is asked to guess a letter in the word.
-![Picture of first stage of the game]()
+![Picture of first stage of the game](/documentation/first_cat_bird.png)
 -   If the guessed letter is wrong, the cat gets one step closer to the bird.
-![Picture of message when incorrect guess]()
+![Picture of message when incorrect guess](/documentation/not_correct.png)
 -   If the guessed letter is correct, the letter is added to the word.
-![Picture of message when correct guess]()
--   There is a list of letters displayed to the user to know what letters they have guessed.
-![Picture of list of guessed letters]()
+![Picture of message when correct guess](/documentation/correct_guess.png)
+-   There is also a list of letters displayed to the user to know what letters they have guessed, shown in pictures above.
 -   If the user wrong guesses reaches 6, the game is lost and the bird gets eaten.
-![Picture of game lost]()
+![Picture of game lost](/documentation/lose.png)
 -   If the user manages to guess the correct word, the game is won and the bird is saved!
 ![Picture of game won](/documentation/win.png)   
 
@@ -49,7 +50,9 @@ During the development I tested the code in small portions using print statement
 
 ## Bugs
 
--   In the mock terminal there is an empty line in the cat_bird animations that I don't see in the code or in the Gitpod terminal.
+-   In the mock terminal there was an empty line in the cat_bird animations that I didn't see in the code or in the Gitpod terminal.
+    ![Picture of blank line in animation](/documentation/animation_bug.png)
+    But after fixing the lenght of the lines and removing some white space according to the [pep8 tests](https://pep8ci.herokuapp.com/), I managed to get rid of that bug. 
 
 ### Unfixed bugs
 
