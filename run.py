@@ -57,6 +57,7 @@ def get_letter():
         try:
             letter = input("\nPlease enter a letter:\n").upper()
             if len(letter) == 1 and letter.isalpha():
+                clear_terminal()
                 break
             else:
                 print("Only wright one letter at a time and no numbers\n")
@@ -118,6 +119,7 @@ def check_letter(word_game):
             right += letter
             print(f"You have tried these letters: {right + wrong}\n")
             right_count += word_game.count(letter)
+            print(cat_bird.stages[wrong_count])
 
             if right_count == len(word_game):
                 clear_terminal()
