@@ -70,8 +70,25 @@ During the development I tested the code in small portions using print statement
 
 ### Content
 
-### Media
 -   I got the information on how to install Colorama from [pypi.org](https://pypi.org/project/colorama/)
+
+-   I used the following Libraries:
+    -   random, to select a random word.
+    -   os, for the clear tool to clear the terminal window.
+    -   colorama, to color and style text.
+
+-   Programming language was Pyhton
+
+-   Github was used to store the repository for submission.
+
+-   Heroku was used to deploy the the live version of the terminal.
+
+-   [Lucid](https://lucid.app/documents#/documents?folder_id=recent) was used to create the flowchart
+
+- [Fancy Text Pro](https://www.fancytextpro.com/) was used to create the word art.
+
+- [Ascii Art](https://www.asciiart.eu/) is the source of the animations in the game.
+ 
 
 
 
