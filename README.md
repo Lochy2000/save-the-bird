@@ -33,6 +33,19 @@ If the player is correct, the Bird escapes the Cat and survives. If the player's
 ![Image of the flowchart of the game](/documentation/flowchart.png)
 
 ## Testing
+During the development I tested the code in small portions using print statements to be sure that the code was working as I expected.
+
+-   Feature testing
+    -  I tested that the function running the game was working as it should by checking:
+        -   Only letters allowed in the guess 
+        -   Only one letter per guess
+        -   That correct letters were added to the word and to the list of guessed letters
+        -   That incorrect letters were added in the background to the count of wrong guesses, and to the list of guessed letters.
+        -   That the right animation stage was applied when an incorrect guess was made.
+        -   That after number of guesses run out, the final stage of the cat_bird animation was displayed and that the game ended.
+        -    That after the word was correctly guessed, the word_art for winning the game was displayed and geme ended.
+        -   That efter game ended, the function restart_game was run and the question to play again appeared.
+
 
 ## Bugs
 
