@@ -15,7 +15,8 @@ The deployed version of the app can be accessed [here](https://save-the-bird-604
 ![Picture of first stage of the game](/documentation/first_cat_bird.png)
 -   If the guessed letter is wrong, the cat gets one step closer to the bird.
 ![Picture of message when incorrect guess](/documentation/not_correct.png)
--   If the guessed letter is correct, the letter is added to the word. 
+-   If the guessed letter is correct, the letter is added to the word.
+ 
 ![Picture of message when correct guess](/documentation/correct_guess.png)
 -   There is also a list of letters displayed to the user to know what letters they have guessed, shown in pictures above.
 -   If the user wrong guesses reaches 6, the game is lost and the bird gets eaten.
@@ -70,7 +71,6 @@ During the development I tested the code in small portions using print statement
     -   Now the app is being built and when Deploy to Heroku has a green check mark, the build is finished.
     -   Click View button to open the app in a browser window.
 
-## Credits
 
 ### Content
 
@@ -96,6 +96,11 @@ During the development I tested the code in small portions using print statement
 -   [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/) was used to run the code through to check it.
  
 
+## Credits
+-   First of all I want to thank my mentor Spencer Bariball for motivating me to start this project when I had no inspiration to do so.
+    As always he has been a great help on the way!
+
+-   I took some inspiration to this project from [Kite YouTube channel](https://www.youtube.com/watch?v=m4nEnsavl6w&t=205s)
 
 
 
