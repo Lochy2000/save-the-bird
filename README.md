@@ -70,8 +70,18 @@ During the development I tested the code in small portions using print statement
     -   That after number of guesses run out, the final stage of the cat_bird animation was displayed and that the game ended.
     -    That after the word was correctly guessed, the word_art for winning the game was displayed and geme ended.
     -   That efter game ended, the function restart_game was run and the question to play again appeared.
+![Picture of testing sheet](/documentation/testing_doc.png)
 
 ### Validator Testing
+I used the [CI Python Linter](https://pep8ci.herokuapp.com/) to test the code.
+I ran all .py files through it. Both run.py and words.py had no errors or warnings.
+![Picture of pep8 test on run.py](/documentation/pep8_run_file.png)
+![Picture of pep8 test on words.py](/documentation/pep8_words.png)
+
+cat_bird.py and word_art.py have warnings diplayed that I cannot do anything about.
+It is due to the special characters used to create the animations and word art.
+![Picture of pep8 test on word_art.py](/documentation/pep8_word_art.png)
+![Picture of pep8 test on cat_bird.py](/documentation/pep8_cat_bird.png)
 
 
 ## Bugs
