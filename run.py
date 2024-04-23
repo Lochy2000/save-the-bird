@@ -63,7 +63,7 @@ def get_letter():
                 clear_terminal()
                 break
             else:
-                raise ValueError("Only one letter at a time and no numbers\n")
+                raise ValueError("Please enter ONE letter and no numbers\n")
         except ValueError as e:
             print(e)
     return letter
