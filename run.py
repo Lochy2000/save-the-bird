@@ -1,4 +1,7 @@
-""" importing random providing a choice function, os and colorama """
+"""
+importing random providing a choice function, os and colorama
+importing cat_bird, words and word_art from py files
+"""
 import random
 import cat_bird
 from words import movements, equipment, abbrevations
@@ -29,7 +32,7 @@ def validate_choice():
                 print(cat_bird.stages[6])
                 break
             else:
-                raise ValueError("You need to enter a number between 1 and 3.\n")                
+                raise ValueError("Enter a number between 1 and 3.\n")
         except ValueError as e:
             print(e)
     return topic_input
@@ -60,7 +63,7 @@ def get_letter():
                 clear_terminal()
                 break
             else:
-                raise ValueError("Only enter one letter at a time and no numbers\n")
+                raise ValueError("Only one letter at a time and no numbers\n")
         except ValueError as e:
             print(e)
     return letter
