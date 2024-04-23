@@ -29,9 +29,9 @@ def validate_choice():
                 print(cat_bird.stages[6])
                 break
             else:
-                print("That is not a valid number, please try again!\n")
-        except ValueError:
-            print("You need to enter a number between 1 and 3.\n")
+                raise ValueError("You need to enter a number between 1 and 3.\n")                
+        except ValueError as e:
+            print(e)
     return topic_input
 
 
@@ -60,9 +60,9 @@ def get_letter():
                 clear_terminal()
                 break
             else:
-                print("Only enter one letter at a time and no numbers\n")
-        except ValueError:
-            print("Please enter a letter\n")
+                raise ValueError("Only enter one letter at a time and no numbers\n")
+        except ValueError as e:
+            print(e)
     return letter
 
 
