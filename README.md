@@ -33,18 +33,24 @@ To add a highscore board so that users can se other players scores and encurage 
 
 ## Features
 -   At the start page the user is asked to choose from three different topics by entering a number between 1 and 3.
+![Picture of the choice of topics](/documentation/choose_topic.png)
 -   Once the choice is made, the game begins. A picture of a cat sneeking up to a bird is shown and the user is asked to guess a letter in the word.
 ![Picture of first stage of the game](/documentation/first_cat_bird.png)
--   If the guessed letter is wrong, the cat gets one step closer to the bird.
+-   If the guessed letter is wrong, the cat gets one step closer to the bird and the guessed letter is added to the list of letters tried.
 ![Picture of message when incorrect guess](/documentation/not_correct.png)
--   If the guessed letter is correct, the letter is added to the word.
+-   If the player already tried the entered letter, a message is displayed saying that and askes the player to try again.
+![Picture of message when letter already entered](/documentation/tried_letter.png)
+-   If the guessed letter is correct, the letter is added to the word and the guessed letter is added to the list of letters tried.
  
 ![Picture of message when correct guess](/documentation/correct_guess.png)
--   There is also a list of letters displayed to the user to know what letters they have guessed, shown in pictures above.
--   If the user wrong guesses reaches 6, the game is lost and the bird gets eaten.
+![Picture of letter entered in word](/documentation/letter_in_word.png)
+
+-   If the number of incorrect guesses reaches 6, the game is lost and the bird gets eaten.
 ![Picture of game lost](/documentation/lose.png)
 -   If the user manages to guess the correct word, the game is won and the bird is saved!
 ![Picture of game won](/documentation/new_win.png)
+-   When the game is over, the player is asked if they want to play again. If yes, the game restarts, if no the game ends and a message is displayed:
+![Picture with Thanks for playing message](/documentation/end_game.png)
 
 ### Future Features
 -   Ability to save scores
