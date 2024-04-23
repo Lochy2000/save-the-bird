@@ -60,7 +60,7 @@ def get_letter():
                 clear_terminal()
                 break
             else:
-                print("Only wright one letter at a time and no numbers\n")
+                print("Only enter one letter at a time and no numbers\n")
         except ValueError:
             print("Please enter a letter\n")
     return letter
@@ -81,8 +81,10 @@ def restart_game():
             elif restart == "N":
                 print("Thanks for playing!")
                 break
-        except ValueError:
-            print("Please enter Y or N")
+            else:
+                raise ValueError("Please enter Y or N")
+        except ValueError as e:
+            print(e)
 
 
 def check_letter(word_game):
