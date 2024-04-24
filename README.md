@@ -2,7 +2,7 @@
 
 ![Picture of startpage](/documentation/startpage.png)
 
-Save the Bird is a Python terminal game deployed to Heroku.
+Save the Bird is a Python terminal game deployed on Heroku.
 The goal of the game is to test the players knowledge in the sport of CrossFit.
 The player gets to choose from 3 different topics related to CrossFit and then guess what the hidden word is.
 If the player is correct, the Bird escapes the Cat and survives. If the player's guess is wrong to many times, the Bird gets eaten by the Cat.
@@ -12,7 +12,7 @@ The deployed version of the app can be accessed [here](https://save-the-bird-604
 ## User Experience (UX)
 
 ### Site Purpose
-The pupose of the site is to provide a simple and fun platsform for the user to try their luck in a new version of the traditional Hangman game and guess the computers random hidden word.
+The pupose of the site is to provide a simple and fun platform for the user to try their luck in a new version of the traditional Hangman game and guess the computers random hidden word.
 
 ### Audience
 Anyone that is interested in, or passionate about games, and looking for a simple and fun platform to play with.
@@ -24,7 +24,7 @@ The game interface shows clear print statements to guide users through each turn
 The primary goal is to entertain the users and at the same time get them to learn more about the sport of CrossFit.
 
 ### Future Goals
-To add a highscore board so that users can se other players scores and encurage them to set new High scores in order to learn more on the way.
+To add a highscore board so that users can see other players scores and encurage them to set new High scores in order to learn more on the way.
 
 
 ### Flowchart
@@ -40,7 +40,11 @@ To add a highscore board so that users can se other players scores and encurage 
 
 ![Picture of first stage of the game](/documentation/first_cat_bird.png)
 
--   If the guessed letter is wrong, the cat gets one step closer to the bird and the guessed letter is added to the list of letters tried.
+-   If the guessed letter is wrong, the cat gets one step closer to the bird.
+
+![Picture of cat closer to bird](/documentation/cat_closer.png)
+
+-   and the guessed letter is added to the list of letters tried:
 
 ![Picture of message when incorrect guess](/documentation/not_correct.png)
 
@@ -54,7 +58,7 @@ To add a highscore board so that users can se other players scores and encurage 
 
 ![Picture of letter entered in word](/documentation/letter_in_word.png)
 
--   If the number of incorrect guesses reaches 6, the game is lost and the bird gets eaten.
+-   If the number of incorrect guesses reaches 6, the cat got all the way to the bird. The game is lost and the bird gets eaten.
 
 ![Picture of game lost](/documentation/lose.png)
 
@@ -67,6 +71,8 @@ To add a highscore board so that users can se other players scores and encurage 
 ![Picture with Thanks for playing message](/documentation/end_game.png)
 
 ### Error Handling
+
+-   
 
 ### Future Features
 -   Ability to save scores
