@@ -21,20 +21,20 @@ def clear_terminal():
 def validate_choice():
     """
     Asks the player to input a topic choice.
-    If True the while loop breaks.
-    If False player get to input a choice again.
+    If True, the while loop breaks.
+    If False, the player gets to input a choice again.
     """
     while True:
         try:
-            topic_input = int(input("Choose topic:\n"))
+            topic_input = int(input("Choose topic:\n").strip())
             if 1 <= topic_input <= 3:
                 clear_terminal()
                 print(cat_bird.stages[6])
                 break
             else:
-                raise ValueError
-        except (ValueError, TypeError):
-            print("Please enter a number between 1 and 3.\n")
+                print("Please enter a number between 1 and 3.\n")
+        except ValueError:
+            print("Invalid input. Please enter a valid number.\n")
     return topic_input
 
 
@@ -53,41 +53,36 @@ def get_word(option_number):
 
 def get_letter():
     """
-    Prompts the user for a letter and checks that it
-    is only one letter and no numbers
+    Prompts the user for a letter and ensures it
+    is only one alphabetic character.
     """
     while True:
-        try:
-            letter = input("\nPlease enter a letter:\n").upper()
-            if len(letter) == 1 and letter.isalpha():
-                clear_terminal()
-                break
-            else:
-                raise ValueError("Please enter ONE letter and no numbers\n")
-        except ValueError as e:
-            print(e)
+        letter = input("\nPlease enter a letter:\n").upper().strip()
+        if len(letter) == 1 and letter.isalpha():
+            clear_terminal()
+            break
+        else:
+            print("Please enter exactly ONE letter (no numbers, no spaces).\n")
     return letter
 
 
 def restart_game():
     """
     Asks the player if they want to play again,
-    if Yes game restarts, if No game ends
+    if Yes, the game restarts; if No, the game ends.
     """
     while True:
-        try:
-            restart = input(" Want to play again? Y or N:\n").upper()
-            if restart == "Y":
-                clear_terminal()
-                main()
-                break
-            elif restart == "N":
-                print("Thanks for playing!")
-                break
-            else:
-                raise ValueError("Please enter Y or N")
-        except ValueError as e:
-            print(e)
+        restart = input("Want to play again? Y or N:\n").upper().strip()
+        if restart == "Y":
+            clear_terminal()
+            main()
+            break
+        elif restart == "N":
+            print("Thanks for playing!")
+            break
+        else:
+            # Direct feedback without raising an exception
+            print("Please enter Y or N.")
 
 
 def check_letter(word_game):
@@ -103,7 +98,6 @@ def check_letter(word_game):
     wrong_count = 6
     right = ""
     wrong = ""
-
     while right_count != len(word_game) and wrong_count != 0:
         display = ''
         for letter in word_game:
@@ -116,9 +110,9 @@ def check_letter(word_game):
         letter = get_letter()
 
         if letter in right or letter in wrong:
-            print()  #Keeps the animation in place
+            print()  # Keeps the animation in place
             print(f"You have already tried {letter}, please try again!")
-            print()  #Keeps the animations in place
+            print()  # Keeps the animations in place
             print(cat_bird.stages[wrong_count])
             continue
 
@@ -169,10 +163,10 @@ def main():
     print("1. Movements")
     print("2. Equipment")
     print("3. Abbrevations\n")
-
     option_number = validate_choice()
     word_game = get_word(option_number)
     check_letter(word_game)
 
 
-main()
+if __name__ == "__main__":
+    main()
