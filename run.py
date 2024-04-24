@@ -32,9 +32,9 @@ def validate_choice():
                 print(cat_bird.stages[6])
                 break
             else:
-                raise ValueError("Enter a number between 1 and 3.\n")
-        except ValueError as e:
-            print(e)
+                raise ValueError("Please enter a number between 1 and 3.\n")
+        except ValueError:
+            print("Please enter a number between 1 and 3.\n")
     return topic_input
 
 
@@ -116,9 +116,9 @@ def check_letter(word_game):
         letter = get_letter()
 
         if letter in right or letter in wrong:
-            print() #Keeps the animation in place
+            print()  #Keeps the animation in place
             print(f"You have already tried {letter}, please try again!")
-            print() #Keeps the animations in place
+            print()  #Keeps the animations in place
             print(cat_bird.stages[wrong_count])
             continue
 
