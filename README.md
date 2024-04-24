@@ -106,23 +106,28 @@ During the development I tested the code in small portions using print statement
     -   That after number of guesses run out, the final stage of the cat_bird animation was displayed and that the game ended.
     -    That after the word was correctly guessed, the word_art for winning the game was displayed and geme ended.
     -   That efter game ended, the function restart_game was run and the question to play again appeared.
+    -   That all errors were handled and clear to the user.
+
+-   This is the testing sheet that I used:
+
 ![Picture of testing sheet](/documentation/testing_doc.png)
 
 ### Validator Testing
-I used the [CI Python Linter](https://pep8ci.herokuapp.com/) to test the code.
-I ran all .py files through it. Both run.py and words.py had no errors or warnings.
+-   I used the [CI Python Linter](https://pep8ci.herokuapp.com/) to test the code. I ran all .py files through it. 
+-   Both run.py and words.py had no errors or warnings.
+
 ![Picture of pep8 test on run.py](/documentation/pep8_run_file.png)
 ![Picture of pep8 test on words.py](/documentation/pep8_words.png)
 
-cat_bird.py and word_art.py have warnings diplayed that I cannot do anything about.
-It is due to the special characters used to create the animations and word art.
+-   cat_bird.py and word_art.py have warnings diplayed that I cannot do anything about. It is due to the special characters used to create the animations and word art.
+
 ![Picture of pep8 test on word_art.py](/documentation/pep8_word_art.png)
 ![Picture of pep8 test on cat_bird.py](/documentation/pep8_cat_bird.png)
 
 
 ## Bugs
 
--   In the mock terminal there was an empty line in the cat_bird animations that I didn't see in the code or in the Gitpod terminal.
+-   In the mock terminal there was an empty line in the cat_bird animations that I didn't see in the code nor in the Gitpod terminal.
 
     ![Picture of blank line in animation](/documentation/animation_bug.png)
     
@@ -138,7 +143,7 @@ It is due to the special characters used to create the animations and word art.
 ### Version Control
 -   The site was created using Gitpod editor and pushed to Github to the remote repository 'save-the-bird'.
 -   Git commands were used throughout the development to push the code to the remote repository. The following git commands were used:
-    -   git add . - to add the files to the staging area before being committed.
+    -   git add .  - to add the files to the staging area before being committed.
     -   git commit -m "commit message" - to commit changes to the local repository queue that are ready for the final step.
     -   git push - to push all committed code to the remote repository on Github.   
 
@@ -151,16 +156,16 @@ It is due to the special characters used to create the animations and word art.
     -   Select GitHub and search for your GitHub repository.
     -   Scroll down to deploy options.
     -   For this project the Manual Deploy method was chosen.
-    -   Chose main branch and click Deploy Branch. This will deploy the current state of the branch specified.
+    -   Choose main branch and click Deploy Branch. This will deploy the current state of the branch specified.
     -   Now the app is being built and when Deploy to Heroku has a green check mark, the build is finished.
     -   Click View button to open the app in a browser window.
 
 ### Cloning of the Repository Code locally
-    -   Go to the Github repository that you want to clone
-    -   Click on the Code button located above all the project files
-    -   Click on HTTPS and copy the repository link
-    -   Open the IDE of your choice and and paste the copied git url into the IDE terminal
-    -   The project is now created as a local clone
+-   Go to the Github repository that you want to clone.
+-   Click on the Code button located above all the project files.
+-   Click on HTTPS and copy the repository link.
+-   Open the IDE of your choice and and paste the copied git url into the IDE terminal.
+-   The project is now created as a local clone.
 
 
 ## Content
