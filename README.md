@@ -72,7 +72,21 @@ To add a highscore board so that users can see other players scores and encurage
 
 ### Error Handling
 
--   
+-   When the player is asked to enter a topic choice, between 1 and 3, and they enter another number, or a letter, or a space, or Enter, or just press any other key they are asked to enter a number between 1 and 3:
+
+![Picture of invalid choice input](/documentation/validate_choice_error2.png)
+
+-   When the player is asked to guess a letter in the word and they enter a number, more than one letter, a space, just Enter, or any other key, they are asked to enter only one letter and no numbers:
+
+![Picture of entered number](/documentation/get_letter_error1.png)
+
+![Picture of entered several letters](/documentation/get_letter_error2.png)
+
+![Picture of entered space or Enter](/documentation/get_letter_error3.png)
+
+-   At the end of the game, when the player is asked if they want to play again, they have the options to enter Y or N. If they enter another letter, a number, a space, any other character or just press Enter, they are asked to enter Y or N.
+
+![Picture of invalid input when restart game](/documentation/restart_game_error2.png)
 
 ### Future Features
 -   Ability to save scores
