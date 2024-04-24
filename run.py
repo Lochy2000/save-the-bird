@@ -32,8 +32,8 @@ def validate_choice():
                 print(cat_bird.stages[6])
                 break
             else:
-                raise ValueError("Please enter a number between 1 and 3.\n")
-        except ValueError:
+                raise ValueError
+        except (ValueError, TypeError):
             print("Please enter a number between 1 and 3.\n")
     return topic_input
 
