@@ -94,7 +94,12 @@ To add a highscore board so that users can see other players scores and encurage
 
 
 ## Testing
-During the development I tested the code in small portions using print statements to be sure that the code was working as I expected.
+-   During the development I tested the code in small portions using print statements to be sure that the code was working as I expected.
+
+-   I asked my fellow students for user acceptance testing and Raneem Yad made me aware of that animation disappeared when letter was guessed twice. So I added the stage of animation to remain on the screen.
+
+- I had an issue with the error handling in the restart_game function that I discussed with my fellow student Patricia and I solved it with her help.
+
 
 ### Feature testing
 -  I tested that the function running the game was working as it should by checking:
@@ -196,7 +201,9 @@ During the development I tested the code in small portions using print statement
 -   First of all I want to thank my mentor Spencer Bariball for motivating me to start this project when I had no inspiration to do so.
     As always he has been a great help on the way!
 
--   I also got some very helpful tips from my co-student Patricia when I was struggling with error handling.
+-   I also got some very helpful tips from my co-student Patricia when I was struggling with error handling. Very thankful for that!
+
+-   Raneem Yad made some user acceptance tests and me aware of that the animation disappeared at one stage in the game, which I then could fix. Also very thankful for that!
 
 -   I took some initial inspiration and guidelines to this project from:
     -   [Kite YouTube channel](https://www.youtube.com/watch?v=m4nEnsavl6w&t=205s)
