@@ -91,6 +91,7 @@ To add a highscore board so that users can see other players scores and encurage
 ### Future Features
 -   Ability to save scores
 -   A Highscore board
+-   A possibility to the user to get an explanation on all abbrevations
 
 
 ## Testing
