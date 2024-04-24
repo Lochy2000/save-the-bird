@@ -116,7 +116,10 @@ def check_letter(word_game):
         letter = get_letter()
 
         if letter in right or letter in wrong:
+            print() #Keeps the animation in place
             print(f"You have already tried {letter}, please try again!")
+            print() #Keeps the animations in place
+            print(cat_bird.stages[wrong_count])
             continue
 
         if letter in word_game:
