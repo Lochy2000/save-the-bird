@@ -1,6 +1,6 @@
 """
 importing random providing a choice function, os and colorama
-importing cat_bird, words and word_art from py files
+importing cat_bird, words and word_art from .py files
 """
 import random
 import cat_bird
@@ -22,7 +22,7 @@ def validate_choice():
     """
     Asks the player to input a topic choice.
     If True, the while loop breaks.
-    If False, the player gets to input a choice again.
+    Otherwise the player needs to input a choice again.
     """
     while True:
         try:
@@ -163,6 +163,7 @@ def main():
     print("1. Movements")
     print("2. Equipment")
     print("3. Abbrevations\n")
+
     option_number = validate_choice()
     word_game = get_word(option_number)
     check_letter(word_game)

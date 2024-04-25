@@ -119,7 +119,7 @@ If they enter a letter, or a space, or Enter, or any other character, it says "I
 -   I used the [CI Python Linter](https://pep8ci.herokuapp.com/) to test the code. I ran all .py files through it. 
 -   Both run.py and words.py had no errors or warnings.
 
-![Picture of pep8 test on run.py](/documentation/pep8_run_file.png)
+![Picture of pep8 test on run.py](/documentation/pep8_run_new.png)
 ![Picture of pep8 test on words.py](/documentation/pep8_words.png)
 
 -   cat_bird.py and word_art.py have warnings diplayed that I cannot do anything about. It is due to the special characters used to create the animations and word art.
