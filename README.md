@@ -98,6 +98,8 @@ If they enter a letter, or a space, or Enter, or any other character, it says "I
 
 - I had an issue with the error handling in the restart_game function that I discussed with my fellow student Patricia and I solved it with her help.
 
+-   I tested the game both in my local Gitpod terminal and the Heroku terminal.
+
 
 ### Feature testing
 -  I tested that all functions running the game was working as it should by checking:
