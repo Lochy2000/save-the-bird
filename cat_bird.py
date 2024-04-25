@@ -1,4 +1,6 @@
-# from https://www.asciiart.eu/animals
+"""
+from https://www.asciiart.eu/animals
+"""
 
 stages = ['''
             .'\   /`.

@@ -100,7 +100,8 @@ If they enter a letter, or a space, or Enter, or any other character, it says "I
 
 
 ### Feature testing
--  I tested that the function running the game was working as it should by checking:
+-  I tested that all functions running the game was working as it should by checking:
+    -   Only a number between 1 and 3 allowed in the input of topic choice.
     -   Only letters allowed in the guess 
     -   Only one letter per guess
     -   That correct letters were added to the word and to the list of guessed letters
