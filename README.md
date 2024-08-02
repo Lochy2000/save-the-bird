@@ -75,7 +75,8 @@ To add a highscore board so that users can see other players scores and encurage
 -   When the player is asked to enter a topic choice, between 1 and 3, and they enter another number, they are asked to enter a number between 1 and 3.
 If they enter a letter, or a space, or Enter, or any other character, it says "Invalid input, please enter a valid number" 
 
-![Picture of invalid choice input](/documentation/validate_choice_new.png)
+![image](https://github.com/user-attachments/assets/5f970dce-5af2-439c-bcdb-9d327a5e19bd)
+
 
 -   When the player is asked to guess a letter in the word and they enter a number, more than one letter, a space, just Enter, or any other character, they are asked to enter only one letter and no numbers:
 
